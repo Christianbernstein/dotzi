@@ -28,6 +28,7 @@ public class NetworkProvider {
 
             @Override
             public void received(Connection connection, Object o) {
+                if (message.toString().startsWith("com.esotericsoftware.kryonet"))return;
                 provider.sendToAllTCP(o);
                 //todo logger
             }
