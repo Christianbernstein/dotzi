@@ -8,8 +8,8 @@ public class ClusterHandler {
     private static List<KryoChannel> cluster = new ArrayList<KryoChannel>();
 
 
-    public static void addConnection(){
-        cluster.add(new KryoChannel(1));
+    public static void addConnection(int id){
+        cluster.add(new KryoChannel(id));
     }
 
     public static void removConnection(int clusterID){
