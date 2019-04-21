@@ -8,7 +8,7 @@ public class Error {
         System.out.println("[" + new Date().toLocaleString() + " ERROR] " + message);
     }
 
-    public static void send(Exception e, String message){ //extendet errormassegt + logging
+    public static void send(Exception e, String message){ //extendet errormassage
         System.out.println("------- [" + new Date().toLocaleString() + " | Exception ] -------");
         System.out.println();
         System.out.println("Exception : " + e.getClass());
